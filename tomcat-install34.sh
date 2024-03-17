@@ -1,4 +1,4 @@
-#!/bin/sh
+ #!/bin/sh
 # change hostname to tomcat
 sudo hostnamectl set-hostname tomcat
 #sudo su - ec2-user
@@ -26,8 +26,5 @@ sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
 sudo su - ec2-user
-sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
-sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
-starttomcat
-sudo su - ec2-user
+
 
