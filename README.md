@@ -1,4 +1,5 @@
-#!/bin/sh
+
+ #!/bin/sh
 # change hostname to tomcat
 sudo hostnamectl set-hostname tomcat
 #sudo su - ec2-user
@@ -15,7 +16,7 @@ sudo rm -rf apache-tomcat-9.0.86.zip
 ### rename tomcat for good naming convention
 sudo mv apache-tomcat-9.0.86 tomcat9
 ### assign executable permissions to the tomcat home directory
-sudo chmod 777 -R /opt/tomcat9
+sudo chmod 775 -R /opt/tomcat9
 sudo chown ec2-user -R /opt/tomcat9
 ### start tomcat
 sh /opt/tomcat9/bin/startup.sh
